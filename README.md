@@ -65,7 +65,6 @@ $ touch .vscode/launch.json
 
 
 src/main.js
-
 add
 
 if ('serviceWorker' in navigator) {
@@ -76,8 +75,6 @@ if ('serviceWorker' in navigator) {
 
 
 touch public/service-worker.js
-
-
 
 importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/6.1.5/workbox-sw.js'
@@ -91,7 +88,7 @@ if (workbox) {
 
 const precacheController = new workbox.precaching.PrecacheController()
 
-const files = ['/v.png']
+const files = ['/v.jpg']
 const precacheManifest = files.map((element) => {
   return { url: element, revision: '1234' }
 })
