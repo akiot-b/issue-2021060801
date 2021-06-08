@@ -1,0 +1,17 @@
+Note: Using the "preview" debug extension
+Verbose logs are written to:
+/tmp/vscode-debugadapter-8122d525.json.gz
+
+> sw-chrome-debug@0.1.0 serve /src/test/issue-2021060801
+> vue-cli-service serve
+ INFO  Starting development server...
+Could not read source map for file:///src/test/issue-2021060801/node_modules/vue-template-es2015-compiler/buble.js: ENOENT: no such file or directory, open '/src/test/issue-2021060801/node_modules/vue-template-es2015-compiler/buble-browser-deps.umd.js.map'
+
+ DONE  Compiled successfully in 2339ms                                                                                                                                             2:44:18 PM
+  App running at:
+  - Local:   http://localhost:8080/
+  It seems you are running Vue CLI inside a container.
+  Access the dev server via http://localhost:<your container's external mapped port>/
+Could not read source map for file:///opt/yarn-v1.21.1/lib/cli.js: ENOENT: no such file or directory, open '/opt/yarn-v1.21.1/lib/toSubscriber.js.map'
+  Note that the development build is not optimized.
+  To create a production build, run yarn build.
