@@ -9,38 +9,16 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load `)
 }
 
-const cacheName = workbox.core.cacheNames.precache
-caches.open(cacheName).then((cache) => {
-  console.log(cache)
-
-  // キャッシュされたもの一覧
-    cache.keys().then((alreadyCachedRequests) => {
-      console.log(alreadyCachedRequests)
-
-      // キャッシュされたもののURL一覧
-      const alreadyCachedURLs = new Set(
-        alreadyCachedRequests.map((request) => request.url)
-      )
-
-      // キャッシュからコントローラーを復元する？
-      console.log(alreadyCachedURLs)
-      const urls = alreadyCachedRequests.map((request) => request.url)
-      precacheController.addToCacheList(urls)
-    })
-})
-
-
 const precacheController = new workbox.precaching.PrecacheController()
 
-
-const files = ['/v.png']
-
+const files = ['/v.jpg']
 const precacheManifest = files.map((element) => {
   return { url: element, revision: '1234' }
 })
 precacheController.addToCacheList(precacheManifest)
 
 addEventListener('install', (event) => {
+  // Uncaught (in promise) DOMException: Entry already exists.
   event.waitUntil(precacheController.install(event))
 })
 
