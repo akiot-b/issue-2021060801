@@ -48,6 +48,7 @@ $ touch .vscode/launch.json
           "serve"
         ],
         "console": "integratedTerminal",
+        "trace": true,
       },
       {
           "type": "chrome",
@@ -58,7 +59,8 @@ $ touch .vscode/launch.json
           "breakOnLoad": true,
           "sourceMapPathOverrides": {
             "webpack:///src/*": "${webRoot}/*"
-          }
+          },
+          "trace": true,
       },
     ]
   }

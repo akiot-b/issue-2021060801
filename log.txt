@@ -1,0 +1,18 @@
+Note: Using the "preview" debug extension
+Verbose logs are written to:
+/tmp/vscode-debugadapter-5c4be7f5.json.gz
+[HMR] Waiting for update signal from WDS...
+node_modules/webpack/hot/webpack:/(webpack)/hot/log.js:24
+Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools
+node_modules/vue/dist/webpack:/node_modules/vue/dist/vue.runtime.esm.js:8473
+Yay! Workbox is loaded 
+localhost꞉8080/service-worker.js:7
+workbox No cached response found in 'workbox-precache-v2-http://localhost:8080/'.
+workbox-cdn/releases/_private/logger.js:44
+workbox Network request for '/v.jpg' returned a response with status '200'.
+workbox-cdn/releases/_private/logger.js:44
+workbox Updating the 'workbox-precache-v2-http://localhost:8080/' cache with a new Response for /v.jpg?__WB_REVISION__=1234.
+workbox-cdn/releases/_private/logger.js:44
+Uncaught DOMException: Entry already exists.
+Uncaught DOMException: Entry already exists.
