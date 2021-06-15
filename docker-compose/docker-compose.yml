@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  issue2021060801:
+    container_name: issue2021060801
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true

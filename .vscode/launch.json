@@ -5,9 +5,8 @@
         "type": "node",
         "request": "launch",
         "name": "vuejs",
-        "runtimeExecutable": "npm",
+        "runtimeExecutable": "yarn",
         "runtimeArgs": [
-          "run",
           "serve"
         ],
         "console": "integratedTerminal",
